@@ -1,16 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
+<!-- <script>
+  var chat_appid = '';
+  var chat_id = ''; // Intentionally left blank
+  var chat_name = ''; // Intentionally left blank
+  var chat_avatar = ''; // Intentionally left blank
+  var chat_link = ''; // Intentionally left blank
+  var chat_height = '600px';
+  var chat_width = '990px';
+  var chat_iframe = {}; // Intentionally left blank
+
+  window.chat_id = '';
+  window.chat_name = '';
+  window.chat_avatar = 'USER_AVATAR';
+  window.chat_link = 'USER_PROFILELINK';
+  window.jqcc.cometchat.init();
+
+  (function () {
+    var css = document.createElement('link'); css.rel = 'stylesheet'; css.type = 'text/css'; css.href = 'https://fast.cometondemand.net/' + chat_appid + 'x_xchat.css';
+    document.getElementsByTagName("head")[0].appendChild(css);
+    var js = document.createElement('script'); js.type = 'text/javascript'; js.src = 'https://fast.cometondemand.net/' + chat_appid + 'x_xchat.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(js, s);
+  })();
+
+  window.chat_id = 'USER_UID';
+  window.chat_name = 'USER_NAME';
+  window.chat_avatar = 'USER_AVATAR';
+  window.chat_link = 'USER_PROFILELINK';
+
+  var js = document.createElement('script'); js.type = 'text/javascript'; js.src = 'https://fast.cometondemand.net/' + window.chat_appid + 'x_xchatx_xcorex_xembedcode.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(js, s);
+  js.onload = function () {
+    window.chat_iframe.style = 'width:' + window.chat_width + ';height:' + window.chat_height + ';max-width:100%;border:1px solid #CCCCCC;border-radius:5px;overflow:hidden;'; window.chat_iframe.module = 'synergy'; window.chat_iframe.width = window.chat_width.replace('px', ''); window.chat_iframe.height = window.chat_height.replace('px', ''); window.chat_iframe.src = 'https://' + window.chat_appid + '.cometondemand.net/cometchat_embedded.php';
+    if (typeof (window.addEmbedIframe) == "function") {
+      window.addEmbedIframe(window.chat_iframe);
+    }
+  }
+
+</script> -->
+
+<script type="text/javascript">
+
+  var chat_appid = '';
+  var chat_id = 'SUPERHERO1';
+  var chat_name = 'John Doe Mr.';
+  var chat_id = '1';
+  var chat_avatar = 'https://www.yoursite.com/avatars/1.png';
+  var chat_link = 'https://www.yoursite.com/john-doe';
+  (function () {
+    var css = document.createElement('link'); css.rel = 'stylesheet'; css.type = 'text/css'; css.href = 'https://fast.cometondemand.net/' + chat_appid + 'x_xchat.css';
+    document.getElementsByTagName("head")[0].appendChild(css);
+    var js = document.createElement('script'); js.type = 'text/javascript'; js.src = 'https://fast.cometondemand.net/' + chat_appid + 'x_xchat.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(js, s);
+  })();
+</script>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -19,14 +71,15 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -36,5 +89,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
